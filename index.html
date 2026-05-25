@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computer Vision Lab - Group Leader</title>
+        <link rel="icon" type="image/x-icon" href="assets/Monobithi Round Logo.ico">
+        <link rel="stylesheet" href="group-leader.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="banner-container">
+            <div class="banner fade">
+                <img class="sdb" src="assets/Website Banner.png" alt="Banner">
+            </div>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="mailto:oishila@iiitkalyani.ac.in" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://iiitkalyani.ac.in/faculty/oishila-bandyopadhyay"><i class="fa fa-university" aria-hidden="true"></i></a>
+            <a href="https://scholar.google.com/citations?user=yKaKpWYAAAAJ&hl=en"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+            
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
+                
+                <!--<a href="">Opportunities</a>
+                <a href="about.html">Research</a>-->
+                <a href="publications.html">Publications</a>
+                <a href="projects.html">Projects</a>
+                <a href="team.html">Team</a>
+                <a href="index.html">Group Leader</a>
+                
+            </div>
+        </nav>
+         <div class="oishila">
+            <div class="personal-data">
+                <img src="assets/oishila.jpeg" alt="oishila-dp"> <br>
+                <b>Dr. Oishila Bandyopadhyay</b><br>
+                <i>Assistant Professor</i> <br><br>
+                <p>Department of Computer Science and Engineering</p>
+                <p>Indian Institute of Information Technology, Kalyani</p>
+                <p>Office: 303B</p>
+                <p>Email: oishila@iiitkalyani.ac.in</p>
+                <p><a href="" style="text-decoration: none; color: bisque;"><i>Curriculum Vitae</i></a></p>
+                <p><a href="https://scholar.google.com/citations?user=yKaKpWYAAAAJ&hl=en" style="text-decoration: none; color: bisque;">Google Scholar</a></p>
+            </div>
+            <div class="course-wrapper">
+                <div class="courses-taught">
+                    <div class="ug-wrapper">
+                        <div class="ug-head">
+                            <p>Undergraduate Courses Taught</p>
+                        </div>
+                        <div class="ug-body">
+                            <ul>
+                                <li>Data Structure and Algorithms</li>
+                                <li>Object Oriented Programming</li>
+                                <li>Software Engineering</li>
+                                <li>Machine Learning</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Image Analysis and Understanding</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ug-wrapper">
+                        <div class="ug-head">
+                            <p>Research Interests</p>
+                        </div>
+                        <div class="ug-body">
+                            <ul>
+                                <li>Medical Image Analysis and Disease Diagnosis</li>
+                                <li>Traffic Video Analysis</li>
+                                <li>Assistive System Development</li>
+                                <li>Satellite Image Analysis for Meteorological Predictions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="ug-head">Profile</div>
+                </div>
+                <div class="ug-body">
+                    <ul>
+                        <li>I graduated from University of Calcutta in Computer Science & Engineering, received my Master’s in CSE from West Bengal University of Technology and Ph.D (Engg.) from Indian Institute of Engineering Science & Technology (IIEST), Shibpur. I am currently Assistant Professor of Indian Institute of Information Technology Kalyani.</li>
+                        <li>My research interest includes Medical image analysis, Computer vision, Digital geometry and Machine learning. My present research focuses on application of Computer vision and Image Understanding on Medical image analysis, traffic management, and Satellite image analysis.</li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+        <div class="footer-wrapper">
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("banner");
+            //let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            /*for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }*/
+            slides[slideIndex-1].style.display = "block";  
+            /*dots[slideIndex-1].className += " active";*/
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>
