@@ -99,9 +99,9 @@ nav a:hover{
     margin-bottom: 30px;
 }
 .personal-data{
-    width: 30%;
-    padding: 20px;
-    padding-left: 50px;
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: white;
     background-image: linear-gradient(to bottom right, rgb(0, 21, 255), rgb(255, 0, 238));
     border-radius: 20px;
@@ -109,6 +109,7 @@ nav a:hover{
 }
 .personal-data img{
     display: block;
+    margin: auto;
     border: 3px solid white;
     padding: 5px;
     border-radius: 50%;
@@ -116,9 +117,9 @@ nav a:hover{
 .course-wrapper{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     /*background-color: aqua;*/
-    gap: 20px;
+    gap: 5px;
 }
 .courses-taught{
     /*background-color: coral;*/
@@ -135,6 +136,30 @@ nav a:hover{
 .profile .ug-head{
     margin: auto;
     width: 60%;
+}
+.project-title{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+.title-item{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.details-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+}
+.details{
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: small;
 }
 .ug-wrapper{
     width: 40%;
